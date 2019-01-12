@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="./src/app.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="count" data-controller="click-count">
+      Clicked <span data-target="click-count.label">0</span> times!!!
+      <button data-action="click-count#handleClick">click</button>
+    </div>
+    <hr />
+
+    <div class="select" data-controller="select-change">
+      <select name="" id="" data-action="select-change#handleChange">
+        <option value="a">a</option>
+        <option value="b">b</option>
+        <option value="c">c</option>
+        <option value="d">d</option>
+        <option value="e">e</option>
+        <option value="f">f</option>
+      </select>
+
+      <p>now selected: <span data-target="select-change.label">-</span></p>
+    </div>
+  </body>
+</html>
